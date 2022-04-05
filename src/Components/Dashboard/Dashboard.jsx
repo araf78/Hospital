@@ -48,8 +48,8 @@ const Dashboard = () => {
                  <XAxis dataKey="month"/>
                  <YAxis/>
                  <Tooltip/>
+                <Line dataKey="revenue" stroke="#82ca9d"></Line>
                 <Line dataKey="investment" stroke="#8884d8"/> 
-                <Line dataKey="sell" stroke="#82ca9d"></Line>
                  </LineChart>
            </div>
            <div>
