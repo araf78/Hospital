@@ -1,8 +1,9 @@
 import React from 'react';
 import Instument from '../Instument/Instument';
+import Reviews from '../Reviews/Reviews';
 
-const Reviews = () => {
-    const  allInstuments = [
+const HomeReview = () => {
+   const allReviews = [
         {
           "id": "0",
           "review": " joss full body checkup",
@@ -46,19 +47,17 @@ const Reviews = () => {
           "name": "Redoan Ehsan"
         }
       ];
-
-    return (
-        <div>
-             <div className="grid grid-cols-3 gap-4 mt-20">
-             {
-                allInstuments.map(instument => <Instument
-                key={instument.id}
-                instument={instument}
-                ></Instument>)
-            }
-             </div>
-        </div>
-    );
+      const homeReview = allReviews.slice(0,3);
+      console.log(homeReview)
+    return <div className=" grid grid-cols-3 p-5 border-4 rounded-lg shadow-lg border-green-500 ml-20 mr-20">
+        {
+            homeReview.map(instument=><Instument
+            key={instument.id}
+            instument={instument}
+            ></Instument>)
+        }
+    </div>;
+        
 };
 
-export default Reviews;
+export default HomeReview;

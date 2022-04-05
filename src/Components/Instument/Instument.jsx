@@ -5,7 +5,7 @@ const Instument = (props) => {
     return (
         <div>
             <h2 className="text-2xl text-slate-700">{name}</h2>
-            <p>{review}</p>
+            <p className="text-2xl text-orange-700">{review}</p>
             <p><small>Ratings: {ratings} ⭐</small></p>
         </div>
     );

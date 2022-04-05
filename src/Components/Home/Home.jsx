@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HomeReview from '../HomeReview/HomeReview';
 
 const Home = () => {
     return (
@@ -13,8 +14,7 @@ const Home = () => {
         </div>
         <div className="mb-16">
             <h2 className="text-4xl font-bold text-gray-600 mb-10">Patient Reviews(3)</h2>
-           
-
+         <HomeReview></HomeReview>
         </div>
         <Link to="/reviews" className="border-2 border-lime-600 p-2 rounded-lg text-bold bg-green-200 text-xl">See All Reviews</Link>
        </div>
