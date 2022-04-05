@@ -11,11 +11,12 @@ const Home = () => {
             </div>
             <img className='rounded border-10 ' src="https://thumbs.dreamstime.com/b/hospital-building-modern-parking-lot-59693686.jpg"/>
         </div>
-        <div>
-            <h2 className="text-4xl font-bold text-gray-600 mb-10">Patient Reviews (3)</h2>
-            
-        <Link to="/reviews" className="mt-20 border-2 border-lime-600 p-2 rounded-lg text-bold bg-green-200 text-xl">See All Reviews</Link>
+        <div className="mb-16">
+            <h2 className="text-4xl font-bold text-gray-600 mb-10">Patient Reviews(3)</h2>
+           
+
         </div>
+        <Link to="/reviews" className="border-2 border-lime-600 p-2 rounded-lg text-bold bg-green-200 text-xl">See All Reviews</Link>
        </div>
     );
 };
